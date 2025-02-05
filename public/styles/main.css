@@ -1,139 +1,111 @@
-/* Reset some default browser styles */
-body,
-h1,
-h2,
-p,
-ul,
-li,
-form,
-input,
-textarea,
-a {
+/* Reset Default Styles */
+body, h1, h2, p, ul, li, form, input, textarea, a {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: "Arial", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #f7f9fc;
-  color: #333;
+  background-color: #1e1e2e; /* Dark purple background */
+  color: #e0e0e0;
   line-height: 1.6;
+  padding: 20px;
 }
 
+/* Container */
 .container {
   max-width: 800px;
-  margin: 50px auto;
-  background-color: #fff;
-  padding: 20px 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  background: #28293d; /* Dark gray card background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
 
+/* Header */
 h1 {
   font-size: 2.5em;
+  text-align: center;
+  color: #a29bfe; /* Light purple */
   margin-bottom: 20px;
-  color: #444;
+}
+
+/* New Post Button */
+#newPostBtn {
+  display: block;
+  text-align: center;
+  background-color: #6c5ce7; /* Deep purple */
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+#newPostBtn:hover {
+  background-color: #5a4ec8;
+}
+
+/* Post Cards */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-card {
+  background: #2d2e48; /* Darker purple-gray */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #555;
+  color: #dfe6e9;
+  font-size: 1.8em;
 }
 
-p,
-input,
-textarea {
-  margin-bottom: 20px;
+p {
+  color: #b2bec3;
 }
 
-small {
+.post-date, .author {
+  font-size: 0.9em;
+  color: #8c82fc;
   display: block;
-  margin-bottom: 20px;
-  color: #888;
+  margin-top: 5px;
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
-  outline: none;
-  transition: border 0.3s;
+/* Button Group */
+.btn-group {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
 }
 
-input:focus,
-textarea:focus {
-  border-color: #007bff;
-}
-
-a,
-button {
+a {
   text-decoration: none;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px;
   font-size: 1em;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button.full-width {
-  display: block;
-  text-align: center;
-  width: 100%;
-}
-
-a,
-button:hover {
-  background-color: #0056b3;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-}
-
-li:last-child {
-  border-bottom: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
 a.edit {
-  background-color: #007bff;
-  /* margin-right: 10px; */
+  background-color: #6c5ce7;
+  color: white;
+}
+
+a.edit:hover {
+  background-color: #5a4ec8;
 }
 
 a.delete {
   background-color: #e74c3c;
+  color: white;
 }
 
 a.delete:hover {
   background-color: #c0392b;
-}
-
-#newPostBtn {
-  margin: 20px 0;
-  background-color: #2ecc71;
-  padding: 10px 15px;
-  font-size: 1em;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border: none;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-}
-
-#newPostBtn:hover {
-  background-color: #27ae60;
 }
